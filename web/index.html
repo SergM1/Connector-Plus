@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Connector+" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <title>Connector+</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- Top search panel -->
+  <header class="search-panel" id="searchPanel">
+    <div class="brand">
+      <span class="brand-mark">C+</span>
+      <span class="brand-name">Connector<span class="brand-plus">+</span></span>
+    </div>
+
+    <div class="fields">
+      <div class="field">
+        <span class="dot dot-origin"></span>
+        <input id="originInput" type="text" autocomplete="off" placeholder="From" />
+        <button class="field-action" id="useLocationBtn" title="Use my location" aria-label="Use my location">⊕</button>
+        <ul class="suggestions" id="originSuggestions" hidden></ul>
+      </div>
+      <div class="field">
+        <span class="dot dot-dest"></span>
+        <input id="destInput" type="text" autocomplete="off" placeholder="To" />
+        <button class="field-action" id="swapBtn" title="Swap" aria-label="Swap origin and destination">⇅</button>
+        <ul class="suggestions" id="destSuggestions" hidden></ul>
+      </div>
+    </div>
+
+    <div class="controls">
+      <label class="time-mode">
+        <select id="timeMode">
+          <option value="depart">Depart</option>
+          <option value="arrive">Arrive by</option>
+        </select>
+      </label>
+      <input id="whenInput" type="datetime-local" />
+      <button class="go-btn" id="planBtn">Plan</button>
+    </div>
+  </header>
+
+  <!-- Bottom results sheet -->
+  <section class="results-sheet" id="resultsSheet" aria-live="polite">
+    <div class="sheet-grip"></div>
+    <div class="results-head" id="resultsHead" hidden>
+      <h2 id="resultsTitle">Routes</h2>
+    </div>
+    <div class="results-body" id="resultsBody">
+      <div class="empty-state" id="emptyState">
+        <div class="empty-icon">🚌</div>
+        <p>Plan a trip across the Microsoft Connector shuttle <em>and</em> Dublin public transport in one search.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

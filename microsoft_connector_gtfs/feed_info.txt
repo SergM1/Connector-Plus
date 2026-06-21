@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date
+MS Connector Hackathon,https://zeelo.co,en,20260609,20261231

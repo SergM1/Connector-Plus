@@ -1,0 +1,9 @@
+route_id,agency_id,route_short_name,route_long_name,route_type
+ff632936-46d1-4a79-a16a-3a5c4f59e360,MSCONN,,Burgh Quay - Campus,3
+a9a73ba0-7719-4c49-a4e3-fbca821911a9,MSCONN,,Dun Laoghaire to Campus,3
+b480d1c7-1c09-4cc8-aec2-f40b30192d26,MSCONN,,Heuston - Connolly - Blackrock - Campus,3
+7bca7aa0-2f3f-4482-9f05-3b85dbaffd51,MSCONN,,Heuston - Leeson St - Campus,3
+35419c20-967c-4328-af1c-4331ffd5b8f9,MSCONN,,Ongar via Red Cow to Campus,3
+d43c1400-403e-4c8c-9c7e-2768ec9c218d,MSCONN,,Red Cow to Campus,3
+89b02622-f265-4df1-97e1-d56d7f9ebab3,MSCONN,,Sandyford Luas to Campus,3
+05b736d9-e8fe-43a1-b28b-28dc47be3b3c,MSCONN,,Campus – Blackrock - Leeson St. – Heuston,3

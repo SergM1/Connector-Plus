@@ -1,0 +1,2 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang
+MSCONN,Microsoft Connector (Zeelo),https://zeelo.co,Europe/Dublin,en

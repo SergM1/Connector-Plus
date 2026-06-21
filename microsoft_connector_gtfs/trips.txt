@@ -1,0 +1,43 @@
+route_id,service_id,trip_id,trip_headsign,direction_id
+ff632936-46d1-4a79-a16a-3a5c4f59e360,WEEKDAY,T0001,One Microsoft Place,0
+a9a73ba0-7719-4c49-a4e3-fbca821911a9,WEEKDAY,T0002,One Microsoft Place,0
+a9a73ba0-7719-4c49-a4e3-fbca821911a9,WEEKDAY,T0003,One Microsoft Place,0
+a9a73ba0-7719-4c49-a4e3-fbca821911a9,WEEKDAY,T0004,One Microsoft Place,0
+b480d1c7-1c09-4cc8-aec2-f40b30192d26,WEEKDAY,T0005,One Microsoft Place,0
+b480d1c7-1c09-4cc8-aec2-f40b30192d26,WEEKDAY,T0006,One Microsoft Place,0
+7bca7aa0-2f3f-4482-9f05-3b85dbaffd51,WEEKDAY,T0007,One Microsoft Place,0
+35419c20-967c-4328-af1c-4331ffd5b8f9,WEEKDAY,T0008,One Microsoft Place,0
+d43c1400-403e-4c8c-9c7e-2768ec9c218d,WEEKDAY,T0009,One Microsoft Place,0
+d43c1400-403e-4c8c-9c7e-2768ec9c218d,WEEKDAY,T0010,One Microsoft Place,0
+d43c1400-403e-4c8c-9c7e-2768ec9c218d,WEEKDAY,T0011,One Microsoft Place,0
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0012,One Microsoft Place,0
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0013,One Microsoft Place,0
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0014,One Microsoft Place,0
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0015,One Microsoft Place,0
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0016,One Microsoft Place,0
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0017,One Microsoft Place,0
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0018,One Microsoft Place,0
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0019,One Microsoft Place,0
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0020,One Microsoft Place,0
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0021,One Microsoft Place,0
+ff632936-46d1-4a79-a16a-3a5c4f59e360,WEEKDAY,T0022,Connolly Station,1
+05b736d9-e8fe-43a1-b28b-28dc47be3b3c,WEEKDAY,T0023,Heuston Station,1
+a9a73ba0-7719-4c49-a4e3-fbca821911a9,WEEKDAY,T0024,Dun Laoghaire Station,1
+a9a73ba0-7719-4c49-a4e3-fbca821911a9,WEEKDAY,T0025,Dun Laoghaire Station,1
+a9a73ba0-7719-4c49-a4e3-fbca821911a9,WEEKDAY,T0026,Dun Laoghaire Station,1
+b480d1c7-1c09-4cc8-aec2-f40b30192d26,WEEKDAY,T0027,Heuston Station,1
+b480d1c7-1c09-4cc8-aec2-f40b30192d26,WEEKDAY,T0028,Heuston Station,1
+7bca7aa0-2f3f-4482-9f05-3b85dbaffd51,WEEKDAY,T0029,Heuston Station,1
+35419c20-967c-4328-af1c-4331ffd5b8f9,WEEKDAY,T0030,Delhurst Hansfield,1
+d43c1400-403e-4c8c-9c7e-2768ec9c218d,WEEKDAY,T0031,Red Cow (Park & Ride),1
+d43c1400-403e-4c8c-9c7e-2768ec9c218d,WEEKDAY,T0032,Red Cow (Park & Ride),1
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0033,Sandyford Blackthorn Ave,1
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0034,Sandyford Blackthorn Ave,1
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0035,Sandyford Blackthorn Ave,1
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0036,Sandyford Blackthorn Ave,1
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0037,Sandyford Blackthorn Ave,1
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0038,Sandyford Blackthorn Ave,1
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0039,Sandyford Blackthorn Ave,1
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0040,Sandyford Blackthorn Ave,1
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0041,Sandyford Blackthorn Ave,1
+89b02622-f265-4df1-97e1-d56d7f9ebab3,WEEKDAY,T0042,Sandyford Blackthorn Ave,1

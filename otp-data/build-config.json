@@ -1,0 +1,8 @@
+{
+  "transitModelTimeZone": "Europe/Dublin",
+  "osm": [{ "source": "dublin.osm.pbf" }],
+  "transitFeeds": [
+    { "type": "gtfs", "source": "tfi_dublin_gtfs.zip", "feedId": "tfi" },
+    { "type": "gtfs", "source": "ms_connector_gtfs.zip", "feedId": "msconn" }
+  ]
+}
