@@ -133,6 +133,15 @@ html, body {
 .suggestions li small { display: block; color: var(--muted); font-size: 12px; }
 .suggestions li:active, .suggestions li.active { background: var(--accent); color: #fff; }
 .suggestions li:active small, .suggestions li.active small { color: rgba(255,255,255,0.82); }
+.suggestions li.quick { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+.suggestions li.quick .quick-ic {
+  flex: 0 0 auto; width: 32px; height: 32px; border-radius: 9px;
+  display: grid; place-items: center;
+  background: rgba(0,120,212,0.12); color: var(--accent);
+}
+.suggestions li.quick .quick-ic .msym { font-size: 19px; }
+.suggestions li.quick small { font-weight: 500; margin-top: 1px; }
+.suggestions li.quick:active .quick-ic, .suggestions li.quick.active .quick-ic { background: rgba(255,255,255,0.25); color: #fff; }
 
 .controls {
   display: flex; gap: 8px; align-items: stretch;

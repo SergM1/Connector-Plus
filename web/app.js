@@ -11,6 +11,10 @@ const DUBLIN_CENTER = [-6.26, 53.345];
 const DUBLIN_VIEWBOX = "-6.55,53.65,-6.00,53.17"; // left,top,right,bottom (soft bias only)
 const CONNECTOR_FEED = "msconn"; // gtfsId prefix that marks a Microsoft Connector leg
 
+// Fixed company destination — staff use this app without accounts, so "Work" is a
+// built-in shortcut to the Microsoft Dublin campus (One Microsoft Place).
+const WORK_PLACE = { lat: 53.2689612, lon: -6.1949369, short: "Work", label: "One Microsoft Place" };
+
 /* mode -> visual */
 const MODE_STYLE = {
   WALK:    { ic: "walk",  color: "#8a94a6", label: "Walk" },
@@ -418,6 +422,26 @@ function wireSuggest(input, sugEl, which) {
   input.addEventListener("blur", () => setTimeout(() => (sugEl.hidden = true), 150));
 }
 
+// Show the "Work" shortcut at the top of the To suggestions when it's focused & empty.
+function showQuickDest() {
+  if (els.destInput.value.trim()) return;
+  els.destSug.innerHTML = "";
+  const li = document.createElement("li");
+  li.className = "quick";
+  li.innerHTML =
+    `<span class="quick-ic"><span class="msym">work</span></span>` +
+    `<span class="quick-text">Work<small>One Microsoft Place</small></span>`;
+  li.addEventListener("mousedown", (e) => {
+    e.preventDefault();
+    choosePlace("dest", { ...WORK_PLACE });
+    els.destInput.value = "Work";
+    els.destSug.hidden = true;
+    onPlan();
+  });
+  els.destSug.appendChild(li);
+  els.destSug.hidden = false;
+}
+
 function choosePlace(which, place) {
   state[which] = place;
   setMarker(which, place);
@@ -425,11 +449,10 @@ function choosePlace(which, place) {
   if (state.origin && state.dest) fitToPoints();
 }
 
-// Show the "use my location" button only when the origin isn't already your location.
+// The "use my location" button is always available, in every scenario.
 function updateLocBtn() {
   if (!els.useLocationBtn) return;
-  const isCurrent = !!(state.origin && state.origin.current);
-  els.useLocationBtn.classList.toggle("loc-hidden", isCurrent);
+  els.useLocationBtn.classList.remove("loc-hidden");
 }
 
 function fitToPoints() {
@@ -1222,6 +1245,7 @@ function defaultWhen() {
 function init() {
   wireSuggest(els.originInput, els.originSug, "origin");
   wireSuggest(els.destInput, els.destSug, "dest");
+  els.destInput.addEventListener("focus", showQuickDest);
   els.planBtn.addEventListener("click", onPlan);
   els.useLocationBtn.addEventListener("click", () => useMyLocation(false));
   els.swapBtn.addEventListener("click", () => {
