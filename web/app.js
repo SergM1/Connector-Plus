@@ -798,18 +798,6 @@ function comparisonBanner(c) {
         </div>
       </div>`;
   }
-  // Public transport is as good or better — say so honestly.
-  if (c.withBest) {
-    const tie = c.withoutBest && c.savesMinutes <= 0;
-    return `
-      <div class="compare neutral">
-        <div class="compare-icon">${svgIcon("bus", 20)}</div>
-        <div class="compare-text">
-          <strong>Public transport wins this trip</strong>
-          <span>${tie ? "the Connector doesn't save time here" : "no faster Connector option for these points/time"} · best is ${fmtDur(c.withBest.duration)}${c.publicFare > 0 ? `, €${c.publicFare.toFixed(2)} on Leap` : ""}</span>
-        </div>
-      </div>`;
-  }
   return "";
 }
 
