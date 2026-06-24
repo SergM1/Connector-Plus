@@ -58,12 +58,9 @@ html, body {
 
 .brand { display: flex; align-items: center; gap: 9px; margin-bottom: 12px; }
 .brand-mark {
-  display: grid; place-items: center;
   width: 30px; height: 30px;
   border-radius: 9px;
-  background: linear-gradient(135deg, var(--accent), var(--connector));
-  color: #fff;
-  font-weight: 800; font-size: 14px; letter-spacing: -0.5px;
+  object-fit: cover;
   box-shadow: var(--shadow-soft);
 }
 .brand-name { font-weight: 700; font-size: 18px; letter-spacing: -0.3px; }
