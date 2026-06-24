@@ -1,10 +1,12 @@
 "use strict";
 
 /* ---------------- Config ---------------- */
-// When opened over http(s) use the page host; fall back to localhost for file:// or missing host.
-const OTP_HOST = (location.protocol.startsWith("http") && location.hostname) ? location.hostname : "localhost";
-const OTP_PROTO = location.protocol.startsWith("http") ? location.protocol : "http:";
-const OTP_URL = `${OTP_PROTO}//${OTP_HOST}:8080/otp/gtfs/v1`;
+// In dev (file:// or localhost) OTP is served directly on :8080. In production the
+// page is served over https and nginx reverse-proxies the OTP API under same-origin /otp/.
+const OTP_IS_LOCAL = !location.hostname || location.hostname === "localhost" || location.hostname === "127.0.0.1";
+const OTP_URL = OTP_IS_LOCAL
+  ? `${location.protocol.startsWith("http") ? location.protocol : "http:"}//${location.hostname || "localhost"}:8080/otp/gtfs/v1`
+  : "/otp/gtfs/v1";
 const PHOTON = "https://photon.komoot.io/api/"; // OSM-based autocomplete geocoder (type-ahead)
 const NOMINATIM = "https://nominatim.openstreetmap.org/search"; // fallback
 const DUBLIN_CENTER = [-6.26, 53.345];
