@@ -80,11 +80,6 @@ County Dublin OpenStreetMap extract (street + footpath network).
 - Save the file in the project root (any `*.osm.pbf` name works; the build step copies it
   to `otp-data/dublin.osm.pbf`).
 
-### 3. Microsoft Connector shuttle  →  `microsoft_connector_gtfs/`
-
-Already in the repo (built from the Zeelo feed: 8 routes, both directions, 42 weekday
-trips). This is internal Microsoft data — **keep the repository private.**
-
 ---
 
 ## Build & run
